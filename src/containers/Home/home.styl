@@ -1,0 +1,494 @@
+@import "../../common/stylus/mixins.styl"
+.wrap
+  width 100%
+  height 100%
+  overflow hidden
+
+  .headerTop
+    position fixed
+    z-index 10
+    top 0
+    left 0
+    background #fff
+    width 100%
+    padding: 0 .4rem;
+    height 148 *$rem
+    box-sizing border-box
+    overflow hidden
+    .logo-search
+      height 88*$rem
+      width 100%
+      display flex
+      flex-direction row
+      align-items center
+      .logo
+        width: 1.84rem;
+        height: .53333rem;
+        background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-11d65342f9.png);
+        display: inline-block;
+        margin-right: .26667rem;
+        background-size: cover;
+        background-position: center;
+      .search
+        width 532 *$rem
+        height 56 *$rem
+        border-radius 0.1rem
+        background #ededed
+        display flex
+        justify-content center
+        align-items center
+        .search-icon
+          display inline-block;
+          vertical-align middle;
+          background-image url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-2fb94833aa.png);
+          background-repeat no-repeat;
+          background-size 100% 100%;
+          width .37333rem;
+          height .37333rem;
+          margin-right .13333rem;
+        span
+          color #666;
+          font-size 0.4rem
+
+    .nav
+      height 60 *$rem
+      width 100%
+      overflow hidden
+      .navList
+        width 1350*$rem
+        height 100%
+        display flex
+        align-items center
+        flex-wrap wrap
+        overflow hidden
+        li
+          display inline-block;
+          padding 0 .21333rem;
+          line-height .8rem;
+          height 95%
+          font-size .37333rem;
+          color #333;
+          text-align center;
+          margin-left: .64rem;
+          border-bottom 1.5px solid white
+          &.active
+            border-bottom 1.5px solid red
+            color red
+          &:first-child
+            margin-left: 0rem;
+  .homeContiner
+    width 100%
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    background #f4f4f4
+    margin auto 0
+    margin-bottom 3.3rem;
+    section
+      padding-top 2rem
+      /*margin: .48rem 0;*/
+      .swiper
+        background #fff
+        margin-bottom: .26667rem;
+        .swiper-container
+          width 100%
+          height 370 *$rem
+          .swiper-wrapper
+            width 100%
+            height 100%
+            .swiper-slide
+              display flex
+              justify-content center
+              align-items flex-start
+              flex-wrap wrap
+              img
+                display inline-block
+                width 100%
+                height 100%
+          .swiper-pagination
+            .swiper-pagination-bullet
+              width .53333rem
+              height .03333rem
+              background #000
+              opacity .3
+              padding 0
+              border 0
+              font-size 100%
+              font-weight normal
+              vertical-align baseline
+              &.swiper-pagination-bullet-active
+                opacity: 1;
+        .supports
+          width 100%
+          height .96rem
+          ul
+            width 95%
+            height .96rem
+            margin 0 auto
+            display flex
+            justify-content space-around
+            li
+              flex: 1;
+              float: left
+              display flex
+              align-items center
+              justify-content center
+              a
+                flex 1
+                display: flex;
+                justify-content center
+                vertical-align: middle;
+                height: .42667rem
+                .iconImg
+                  display: inline-block;
+                  vertical-align: middle;
+                  background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/servicePolicy-index-288c7abfd1.png);
+                  background-repeat: no-repeat;
+                  background-size: 100% 100%;
+                  width: .42667rem;
+                  height: .42667rem;
+                span
+                  font-size: .32rem;
+                  color: #333;
+                  display inline-block
+                  margin-left: .10667rem;
+                  line-height: .42667rem;
+                  vertical-align: middle;
+      .brand
+        background-color #fff
+        .brand-header
+          display flex
+          flex-flow: row nowrap;
+          align-items center
+          justify-content: center;
+          height: 1.46667rem;
+          font-size: .42667rem;
+          >a
+            display flex
+            flex-flow row nowrap
+            color #333
+            align-items center
+            .right-icon
+              display: inline-block;
+              vertical-align: middle;
+              background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/go2-3e511991d6.png);
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              width: .4rem;
+              height: .4rem;
+              margin-left .13333rem
+        .brand-goods
+          padding-bottom: .10667rem
+          >ul
+            width 100%
+            position: relative;
+            margin: 0 .21333rem;
+            height: 6.24rem;
+            overflow: hidden;
+            >.goods
+              display: inline-block;
+              float left
+              position: relative;
+              margin: 2*$rem;
+              width: 4.73333rem;
+              height: 3.14667rem;
+              overflow: hidden;
+              background-color: #f4f4f4;
+              >a
+                width 100%
+                height 100%
+                >.content-goods
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  padding: .26667rem 0 0 .26667rem;
+                  width: 100%;
+                  z-index: 4;
+                  >h4
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    color: #333;
+                    font-size: .37333rem;
+                    line-height: .45333rem;
+                    margin-bottom: .08rem;
+                  >.price
+                    display flex
+                    >.price1
+                      color: #333;
+                      font-size: .37333rem;
+                      line-height: .45333rem;
+                    >.price2
+                      color: #333;
+                      font-size: .32rem;
+                      line-height: .45333rem;
+                  >.shangxin-icon
+                    background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/new-5e42f2db1f.png);
+                    height: .42667rem
+                    width: .85333rem;
+                    display: inline-block;
+                    margin-top -40*$rem
+                    vertical-align: middle;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+
+
+                >img
+                  width 100%
+                  height 100%
+      .limitTime
+        .limitTime-warp
+          padding: .4rem .53333rem .4rem .74667rem;
+          margin-bottom: .26667rem;
+          height: 5.06667rem;
+          background: #fff;
+          display: -moz-flex;
+          display: flex;
+          >.left-item
+            flex 1
+            display flex
+            flex-direction: column;
+            padding-top: 1.06667rem;
+            >.title
+              font-size: .48rem;
+              line-height: .48rem;
+              margin-bottom: .32rem;
+              color: #333;
+              letter-spacing: .16rem;
+            >.countdown
+              display inline
+              overflow hidden
+              >span
+                float left
+                vertical-align middle
+                line-height: .74667rem;
+                display: inline-block;
+                text-align: center;
+              >.time
+                width: .82667rem;
+                height: .74667rem;
+                font-size: .42667rem;
+                color: #fff;
+                border-radius: .05333rem;
+                background: #444;
+              >.colon
+                color: #333;
+                font-size: .4rem;
+                width: .26667rem;
+                font-weight: 700;
+            >.next-title
+              margin-top: .53333rem;
+              color: #333;
+              font-size: .32rem;
+              line-height: .32rem;
+              height: .32rem;
+          >.right-item
+            background: #fff;
+            width: 4.26667rem;
+            height: 4.26667rem;
+            position: relative;
+            >.imgWarp
+              width 100%
+              >img
+                width: 100%;
+                height: 100%;
+
+            >.price
+              height: 1.28rem;
+              width: 1.28rem;
+              position: absolute;
+              right: .26667rem;
+              bottom: .48rem;
+              background-color: rgba(244,143,24,.95);
+              border-radius: 100%;
+              color: #fff;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              >div
+                font-size: .37333rem;m
+                line-height: .37333rem;
+                height: .37333rem;
+                >.rmb
+                  font-size .32rem
+                  margin-right -5*$rem
+
+      .fuli
+        width: 10rem;
+        height: 4rem;
+        margin-bottom: .26667rem
+        background-image: url(http://yanxuan.nosdn.127.net/a3ea2d1108c94c7dece05eddf95f6df5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      .topicList
+        width 100%
+        height 563*$rem
+        font-size: .42667rem
+        background-color #fff
+        >.topic-title
+          width 100%
+          height: 1.46667rem
+          display flex
+          color: #333
+          align-items center
+          justify-content center
+        >.topic-items
+          width 100%
+          height 453*$rem
+          box-sizing border-box
+          padding: 0 .4rem .48rem;
+          overflow: hidden
+          >.topicScrollBox
+            width 100%
+            height 100%
+            display flex
+            >ul
+              flex 1
+              display flex
+              width
+              >li
+                display flex
+                flex-flow: row nowrap
+                flex-direction column
+                margin-right: 20.8444* $rem;
+                >a
+                  display: block;
+                  width: 7.66667rem;
+                  margin-bottom: .21333rem;
+                  border-radius: 8* $rem;
+                  overflow: hidden
+                  >img
+                    display block
+                    width 100%
+                    height 100%
+                >.item-price
+                  height: .54667rem;
+                  margin-bottom: .02667rem;
+                  zoom: 1;
+                  >h4
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 5.46667rem;
+                    float: left;
+                    font-size: .37333rem;
+                  >span
+                    float: right;
+                    font-size: .37333rem;
+                    color: #b4282d;
+                >.item-info
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  width: 7.66667rem;
+                  font-size: .32rem;
+                  color: #7F7F7F;
+      .downLoad-copyright
+        border-top: 1*$rem solid rgba(0,0,0,.15);
+        background-color: #414141
+        >div
+          text-align: center;
+          padding: .72rem .26667rem .37333rem
+          width: 10rem;
+          margin-right: auto;
+          margin-left: auto;
+          box-sizing border-box
+          >.downLoad
+            width 90%
+            margin-right: auto;
+            margin-left: auto;
+            display flex
+            align-items center
+            justify-content center
+            >a
+              width: 2.29333rem;
+              font-size: .32rem;
+              color: #fff;
+              margin-right: .33333rem
+              margin-left: .33333rem
+              height: .82667rem;
+              line-height: .82667rem
+              border: 1*$rem solid #999
+              text-align: center;
+              background-color: transparent;
+              border-radius: 4*$rem;
+              overflow: hidden;
+
+          >.copyright
+            box-sizing: border-box
+            margin-top: .48rem;
+            margin-bottom: .48rem;
+            display flex
+            flex-direction column
+            align-items center
+            justify-content center
+            >span
+              font-size: .32rem;
+              line-height: .42667rem;
+              color: #999;
+
+
+    >.gotoTop
+      position: absolute;
+      right: .30667rem;
+      bottom: -2rem;
+      vertical-align: middle;
+      width: 1.09333rem;
+      height: 1.09333rem;
+      background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goToTop-7a19216f77.png);
+      background-size: 1.09333rem 1.09333rem;
+      z-index: 2;
+    .newsWarp
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      >.mask
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+      >.close-button
+        position: fixed;
+        right: .4rem;
+        top: .8rem;
+        z-index: 2;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/modalClose-9365f12572.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: .85333rem;
+        height: .85333rem;
+      .modal
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        width: 8.4rem;
+        height: 10.72rem;
+        background-image:url(//yanxuan.nosdn.127.net/3296fd0c446376e1ec5f76a4f8062aa1.png?imageView&quality=85&thumbnail=630x804)
+        background-size 100%
+        .linkBtn
+          display: block;
+          position: absolute;
+          left: .53333rem;
+          bottom: .64rem;
+          width: 7.33333rem;
+          height: 1.06667rem;
+          border-radius: .05333rem;
+          background: #B4282D;
+          text-align: center;
+          line-height: 1.06667rem;
+          font-size: .37333rem;
+          font-family: PingFangSC-Regular;
+          color: #fff;
